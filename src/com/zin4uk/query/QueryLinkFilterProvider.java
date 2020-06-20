@@ -9,6 +9,6 @@ public class QueryLinkFilterProvider implements ConsoleFilterProvider {
     @NotNull
     @Override
     public Filter[] getDefaultFilters(@NotNull final Project project) {
-        return new Filter[]{new MongoLinkFilter(project)};
+        return new Filter[]{new MongoLinkFilter()};
     }
 }

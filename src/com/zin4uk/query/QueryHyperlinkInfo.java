@@ -28,12 +28,6 @@ public class QueryHyperlinkInfo implements HyperlinkWithPopupMenuInfo {
     public ActionGroup getPopupMenuGroup(@NotNull MouseEvent mouseEvent) {
         final DefaultActionGroup group = new DefaultActionGroup();
 
-        // group.add(new AnAction(() -> XmlBundle.message("open.in.0", new Object[]{"NoSqlBooster"}), PlatformIcons.ADD_ICON) {
-        //     public void actionPerformed(@NotNull AnActionEvent e) {
-        //         System.out.println("query: " + query);
-        //     }
-        // });
-
         group.add(new AnAction(() -> "Copy formatted query", PlatformIcons.COPY_ICON) {
             public void actionPerformed(@NotNull AnActionEvent e) {
                 CopyPasteManager.getInstance().setContents(new StringSelection(query.getFormattedQuery()));
