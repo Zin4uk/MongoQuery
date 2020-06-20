@@ -22,7 +22,6 @@ public class MongoLinkFilter implements Filter {
         "Executing aggregation: (?<" + QUERY_BLOCK + ">.+) in collection (?<" + COLLECTION_BLOCK + ">.+)$",
         Pattern.UNICODE_CHARACTER_CLASS);
 
-
     public MongoLinkFilter() {
         queryMatcher = MONGO_QUERY_PATTERN.matcher("");
     }
@@ -38,7 +37,6 @@ public class MongoLinkFilter implements Filter {
     public List<ResultItem> getResultItemsUrl(final String line, final int startPoint) {
         final List<ResultItem> results = new ArrayList<>();
         final List<QueryLinkMatch> matches = detectQueries(line);
-
 
         for (final QueryLinkMatch match : matches) {
             results.add(

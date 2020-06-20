@@ -1,39 +1,42 @@
 <idea-plugin>
-  <id>com.your.company.unique.plugin.id</id>
-  <name>MongoQuery</name>
-  <version>1.0</version>
-  <vendor email="Zin4uk@gmail.com" url="https://github.com/Zin4uk/MongoQuery">Zin4uk</vendor>
+    <id>com.your.company.unique.plugin.id</id>
+    <name>MongoQuery</name>
+    <version>1.0</version>
+    <vendor email="Zin4uk@gmail.com" url="https://github.com/Zin4uk/MongoQuery">Zin4uk</vendor>
 
-  <description><![CDATA[
+    <description><![CDATA[
     Allows copying formatted Spring-Data-MongoDB debug query from console to clipboard.<br />
+    <br/>
+		<img src="https://github.com/Zin4uk/MongoQuery/raw/master/resources/screenshot/screenshot1.jpg" alt="screenshot" /><br/>
+	<br/>
     How to use:<br />
     <br />
     <em>1. Enable MongoTemplate debug mode</em><br />
     <em>logging.level.org.springframework.data.mongodb.core.MongoTemplate: DEBUG</em><br />
     <em>2. Click on the query in the log window to copy it to Clipboard.</em>
     ]]>
-  </description>
+    </description>
 
-  <change-notes><![CDATA[
+    <change-notes><![CDATA[
       v1.0 beta<br>
       <em>Implemented mongo query format and copy</em>
     ]]>
-  </change-notes>
+    </change-notes>
 
-  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-  <idea-version since-build="173.0"/>
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
 
-  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
-       on how to target different products -->
-  <depends>com.intellij.modules.platform</depends>
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
 
-  <extensions defaultExtensionNs="com.intellij">
-    <!-- Add your extensions here -->
-    <consoleFilterProvider implementation="com.zin4uk.query.QueryLinkFilterProvider"/>
-  </extensions>
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <consoleFilterProvider implementation="com.zin4uk.query.QueryLinkFilterProvider"/>
+    </extensions>
 
-  <actions>
-    <!-- Add your actions here -->
-  </actions>
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
 
 </idea-plugin>
