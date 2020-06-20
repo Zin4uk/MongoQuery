@@ -2,7 +2,7 @@
   <id>com.your.company.unique.plugin.id</id>
   <name>MongoQuery</name>
   <version>1.0</version>
-  <vendor email="Zin4uk@gmail.com" url="http://www.Zin4uk.com">Zin4uk</vendor>
+  <vendor email="Zin4uk@gmail.com" url="https://github.com/Zin4uk/MongoQuery">Zin4uk</vendor>
 
   <description><![CDATA[
     Allows copying formatted Spring-Data-MongoDB debug query from console to clipboard.<br />
