@@ -1,8 +1,8 @@
 <idea-plugin>
-    <id>com.your.company.unique.plugin.id</id>
+    <id>com.zin4uk.query</id>
     <name>MongoQuery</name>
-    <version>1.0</version>
-    <vendor email="Zin4uk@gmail.com" url="https://github.com/Zin4uk/MongoQuery">Zin4uk</vendor>
+    <version>1.0.1</version>
+    <vendor email="Zin4uk@gmail.com" url="https://github.com/Zin4uk/MongoQuery">Zinchuk Vadim</vendor>
 
     <description><![CDATA[
     Allows copying formatted Spring-Data-MongoDB debug query from console to clipboard.<br />
@@ -18,7 +18,9 @@
     </description>
 
     <change-notes><![CDATA[
-      v1.0 beta<br>
+      v1.0.1<br>
+      <em>Compatibility fixes</em><br>
+      v1.0.0<br>
       <em>Implemented mongo query format and copy</em>
     ]]>
     </change-notes>
